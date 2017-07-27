@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>$copyright$</copyright>
+    <dependencies>
+      <dependency id="Rhythm.Populate" version="0.1.0" />
+      <dependency id="Archetype.Binaries" version="[1.12.2,2.0.0)" />
+    </dependencies>
+  </metadata>
+</package>
