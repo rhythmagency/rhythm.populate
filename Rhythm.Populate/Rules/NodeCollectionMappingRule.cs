@@ -53,8 +53,8 @@ namespace Rhythm.Populate.Rules
                                {
                                    var node = _isMedia ? helper.TypedMedia(x) : helper.TypedContent(x);
 
-                                   return session.Map<TModel>(node).WithOptions(options).Single();
-                               }).ToList();
+                                   return node == null ? null : session.Map<TModel>(node).WithOptions(options).Single();
+                               }).Where(n => n != null).ToList();
 
             destProperty.SetValue(model, list);
         }
